@@ -24,6 +24,7 @@ SECRET_KEY ='django-insecure-feewdetz2z+15()(pn)rj@ws68s!l%)a+mp#q!2gv1x)80*w*i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.get('DEBUG',1)))
 
+# instead of the * there should be the public DNS ipv4 of the server that you deploy on
 ALLOWED_HOSTS = ["*"]
 
 
