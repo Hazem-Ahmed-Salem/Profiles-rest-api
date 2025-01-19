@@ -8,7 +8,7 @@ router.register('viewset-features',views.ViewSetFeatures,basename='viewset-featu
 
 """we didn't specify a basename like in the features of viewsets because this view set has a queryset so django configures the name with the name of the model."""
 router.register('profile',views.UserProfileViewSet)
-
+router.register('feed',views.UserProfileFeedViewSet)
 
 urlpatterns = [
     path('apiview-features/',views.APIViewFeatures.as_view()),
