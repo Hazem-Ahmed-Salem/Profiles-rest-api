@@ -2,11 +2,7 @@ from rest_framework import serializers
 from profiles_api import models
 
 
-class APIFeaturesSerializer(serializers.Serializer):
-    """Regular Serializer"""
-    """Serializes a name field for testing the APIView"""
 
-    name = serializers.CharField(max_length=10)
 
 
 class  UserProfileSerializer(serializers.ModelSerializer):
@@ -52,4 +48,3 @@ class ProfileFeedItemSerializer(serializers.ModelSerializer):
                 'read_only':True
             }
         }
-        
